@@ -1,0 +1,110 @@
+body {
+    margin:0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    height: 100vh;
+}
+
+.text {
+    color:white;
+    font-size: 3em;
+    width:24em;
+    font-family: 'Slabo 27px', serif;
+}
+
+.type-cursor {
+    color:white;
+    font-size: 3em;
+    animation: blink 0.5s infinite linear;
+}
+
+.ludo {
+    position: absolute;
+    height:15em;
+    top:-15em;
+    right:9.8em;
+    bottom:15em;
+    
+}
+
+.caption {
+    position:absolute;
+    width:42em;
+    top: 10em;
+    right:28em;
+}
+
+footer {
+    color:white;
+    position: absolute;
+    bottom:0;
+}
+
+        .st0 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+  }
+        .st1 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+  }
+        .st2 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+  }
+        .st3 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+  }
+        .st4 {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+  }
+        path, rect {
+    stroke-dasharray: 3000;
+    animation: dash 3s cubic-bezier(.455,.03,.515,.955)  alternate;
+    animation-iteration-count: 1;
+  }
+        svg {
+    width: 100em;
+    margin: auto;
+  }
+
+  @keyframes blink {
+      0%{
+          opacity:0;
+      }
+      100%{
+          opacity:1;
+      }
+  }
+
+  @keyframes dash {
+
+    0% {
+        stroke-dashoffset: 3000;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+  }
+}
