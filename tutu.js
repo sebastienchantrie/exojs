@@ -2059,3 +2059,22 @@ compt++
 document.getElementById('target').innerHTML=compt
 localStorage.setItem("save" , target.innerHTML)
 }
+
+// ASYNCHRONOUS 
+
+// EX 1
+
+document.querySelector('#run').addEventListener('click',()=>{
+    window.lib.getPosts(( error , article ) => {
+        if (error===true) {
+console.log("Il y a une erreur")
+        }   
+            else {
+                console.log(article)
+        }
+    })
+})
+
+
+// EX 2
+
