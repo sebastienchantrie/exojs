@@ -1,14 +1,24 @@
-/* becode/javascript
- *
- * /10-asynchronous/09-async-handling-errors/script.js - 10.9: gestion d'erreur (async/await)
- *
- * coded by leny@BeCode
- * started at 09/05/2019
- */
+document.getElementById('run').addEventListener('click', async function() {
+    try {
+    	console.log(await window.lib.getPersons());
+    } catch (err) {
+      console.log("Il y a une erreur", err);
+    }
+});
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
-(() => {
-    // your code here
-})();
+
+/*
+function exemple(arg1, arg2) {
+    let var1 = 23;
+    let var2 = 42;
+    
+    var1 = var2 + ar2;
+    if (true) {
+        console.log(var1 + arg1);
+      console.log("yes !");
+    } else {
+        console.log(arg2);
+      console.log("nop !");
+    }
+    return (var1 + 13);

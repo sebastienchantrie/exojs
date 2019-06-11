@@ -31,12 +31,9 @@
                             element.comment=article2
                             console.log(article)
                         }
-
-
                     })
                 });
             }
-
         })
     })
 })();
