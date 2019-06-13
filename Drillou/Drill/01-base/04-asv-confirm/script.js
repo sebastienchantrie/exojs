@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    function x (demandeInfo) {
+        let age =prompt("Quel age avez vous ?");
+        let ville =prompt("Dans quel ville vivez vous ?");
+        let sexe =prompt("Etes vous un homme ou une femme ?");
+        
+        alert("Bonjour , vous avez "+age+" vous vivez a "+ville+" et vous etes "+sexe+" ");
+        
+        let conf=window.confirm("Correct ;) ?");
+        
+        
+        if (conf===true) {
+            alert("Merci d'avoir valider vos informations");
+        }
+        if (conf===false){
+            x()
+        }   
+        }
+        
+        x()
+    
 })();

@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    function Person (firstname , lastname) {
+        this.firstname = firstname
+        this.lastname  = lastname
+    }
+        let seb=new Person ("Seb " , " Le plus beau ")
+    hello = function() {
+        
+        console.log(seb.firstname + seb.lastname + "say hello")
+    }
+    hello()
+    
+    coucou()
+    
 })();

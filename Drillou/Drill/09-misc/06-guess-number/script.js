@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let nbessai= ""
+    let min=1
+    let max=100
+    
+    function randomnb (){
+        return Math.ceil(Math.random() * (max - min) + min);
+    }
+    
+    let number = randomnb();
+    function testnb (){
+        while(true){
+            let msg=prompt("Saisisez un nombre !")
+            if (msg<number)
+                alert("C'est plus grand !")
+            else if (msg>number)
+                alert("C'est plus petit !")
+            else if (msg==number) {
+                alert("Vous avez trouver le bon nombre en "+ nbessai +" essais");
+                break;
+            }   nbessai++
+        }
+    }
+    testnb();
 })();

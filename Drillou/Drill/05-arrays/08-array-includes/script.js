@@ -23,7 +23,13 @@
         "pêche",
         "raisin",
         "cerise",
-    ];
-
-    // your code here
+        ]
+        
+        function pomornot() {
+            
+    
+    
+    console.log(fruits.includes('pomme'));
+    }
+    pomornot()
 })();

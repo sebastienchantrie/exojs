@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
+    function tablo2(){
+
+        let fruits2 = [
         "pomme",
         "poire",
         "fraise",
@@ -23,5 +25,15 @@
         "cerise",
     ];
 
-    // your code here
+
+    let supprimetable = fruits2.splice(9 , 1)
+    let supprimetable2= fruits2.splice(0 , 1)
+    let ajoutbanane   = fruits2.splice(0 , 0,"kiwi")
+    let ajoutkiwi     = fruits2.splice(9 , 0, "banane")
+
+    console.log(fruits2)
+
+    
+}
+
 })();

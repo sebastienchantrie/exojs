@@ -12,19 +12,36 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("addition").addEventListener("click", () => {
-        // perform an addition
-    });
-
-    document.getElementById("substraction").addEventListener("click", () => {
-        // perform a substraction
-    });
-
-    document.getElementById("multiplication").addEventListener("click", () => {
-        // perform a multiplication
-    });
-
-    document.getElementById("division").addEventListener("click", () => {
-        // perform a division
-    });
+    function calcul() {
+        let nombre1 = parseInt(document.getElementById('nb1').value)
+        let nombre2 = parseInt(document.getElementById('nb2').value)
+        let add = (nombre1 + nombre2)
+        let sous = (nombre1 - nombre2)
+        let mult = (nombre1 * nombre2)
+        let div = nombre1 / nombre2
+        
+    
+        if (document.getElementById('addition').checked) {
+    
+            document.getElementById("afficher").innerHTML = add;
+        }        if (document.getElementById('soustraction').checked) { 
+    
+    
+            document.getElementById("afficher").innerHTML = sous;
+    
+    
+    }
+    
+    if (document.getElementById('multiplication').checked) {
+    
+        document.getElementById("afficher").innerHTML = mult;
+    }
+    
+    
+    if (document.getElementById('division').checked) {
+    
+        document.getElementById("afficher").innerHTML = div;
+    }
+    }
+    
 })();

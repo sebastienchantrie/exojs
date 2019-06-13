@@ -10,5 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let x=prompt("Voulez vous du gateau ?");
+if (x==="oui") {
+    alert("Bravo")}
+    else {
+        alert("Du gateau ca ne se refuse pas")
+    }
 })();

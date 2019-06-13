@@ -10,5 +10,6 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let x=document.getElementById("target")
+    x.innerHTML="owned"
 })();

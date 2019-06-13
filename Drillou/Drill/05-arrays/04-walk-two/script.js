@@ -10,20 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "kiwi",
-        "banane",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
-
-    // your code here
+    function tablo4() {
+        const fruits4 = [ 
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "kiwi",
+            "banane",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ]
+    
+        fruits4.forEach(function (argument) {
+            console.log(argument)
+        });
+    
+        //  AUTRE METHODE        
+        //for (const xy of fruits4) {
+        //    console.log(xy)
+        //}
+    }
+    
 })();

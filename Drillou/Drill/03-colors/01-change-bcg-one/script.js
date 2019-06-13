@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let body = document.querySelector("body"); 
+
+function red(){
+body.style.backgroundColor='#8C2323';
+}
+function bleu(){
+body.style.backgroundColor='#3E846C'
+}
+
+function jaune(){
+
+body.style.backgroundColor='#CCAE06'
+}
+
+function vert(){
+
+body.style.backgroundColor='#0D5621'
+}
+
 })();

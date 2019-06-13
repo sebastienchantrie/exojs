@@ -10,5 +10,8 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+   
+let y=document.querySelector(".target")
+y.innerHTML="owned again"
+
 })();

@@ -9,6 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    // your code here
-})();
+
+    (() => {
+        let slide = document.getElementById("slider");
+        let txt= document.getElementById('target')
+        
+        txt.innerHTML = slide.value
+        slide.oninput = function() {
+        txt.innerHTML=this.value;
+        }
+    })();
+

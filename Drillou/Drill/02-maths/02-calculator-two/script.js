@@ -10,16 +10,28 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
+    function calculswitch()
+    {	
+        let nombre1 = parseInt(document.getElementById('nb1').value)
+        let nombre2 = parseInt(document.getElementById('nb1').value)
+        let add = (nombre1 + nombre2)
+        let sous = (nombre1 - nombre2)
+        let mult = (nombre1 * nombre2)
+        let div = nombre1 / nombre2
 
-    const performOperation = operation => {
-        // perform the operation
-    };
-
-    Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
-        $btn.addEventListener(
-            "click",
-            () => (performOperation($btn.id), false),
-        ),
-    );
+        switch (document.calculatrice.operateur.value)
+        {
+            case document.getElementById('addition').checked);
+            document.getElementById("afficher").innerHTML = add;
+            break;
+            case document.getElementById('soustraction').checked);
+            document.getElementById("afficher").innerHTML = sous;
+            break;
+            case  document.getElementById('mutliplication').checked);
+            document.getElementById("afficher").innerHTML = mult;
+            break;
+            case document.getElementById('division').checked);
+            document.getElementById("afficher").innerHTML = div;
+            break;
+        }
 })();

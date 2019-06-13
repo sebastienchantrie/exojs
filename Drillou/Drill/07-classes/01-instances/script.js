@@ -14,7 +14,10 @@
         constructor(name, age) {
             this.name = name;
             this.age = age;
-        }
+            }
     }
-    // your code here
+    let kitty = new Cat("kitty " ,"10 years");
+    let pixi = new Cat("Pixi ", "6 years")
+    console.log(kitty.name + kitty.age); 
+    console.log(pixi.name + pixi.age)
 })();

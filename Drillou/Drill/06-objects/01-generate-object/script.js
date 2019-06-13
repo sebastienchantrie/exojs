@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    function moi() {
+
+        const seb=new Object()
+            seb.firstname="Chantrie"
+            seb.lastname="Seb"
+            seb.age="25 ans"
+            seb.city="Waterloo"
+            seb.country="Zimbabwé"
+        
+                console.log(seb.firstname)
+                console.log(seb.lastname)
+                console.log(seb.age)
+                console.log(seb.city)
+                console.log(seb.country)
+            }
 })();

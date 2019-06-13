@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let compt="0"
+    document.getElementById("target").innerHTML=localStorage.getItem("save")
+    document.getElementById('increment').onclick = function clik(){
+    compt++
+    document.getElementById('target').innerHTML=compt
+    localStorage.setItem("save" , target.innerHTML)
+    }
 })();

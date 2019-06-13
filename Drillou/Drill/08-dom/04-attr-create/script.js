@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let dataImage = document.getElementById("source").getAttribute("data-image");
+    let target = document.getElementById("target")
+    let img = document.createElement("img");
+    let node = document.createTextNode(dataImage);
+    target.appendChild(img);
+    target.appendChild(node);
+    let source = document.getElementById("source");
+    source.parentNode.removeChild(source);
 })();

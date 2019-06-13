@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    
+document.getElementById('run').onclick = function clik(){
+    let couleur=document.getElementById("color").value;
+    console.log(couleur);
+    document.body.style.backgroundColor=couleur;
+    }
+
 })();

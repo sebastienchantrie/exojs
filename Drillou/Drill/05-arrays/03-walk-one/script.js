@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
+    function tablo3(){
+        let fruits3 = [
         "pomme",
         "poire",
         "fraise",
@@ -25,5 +26,9 @@
         "cerise",
     ];
 
-    // your code here
+for (i=0 ; i<fruits3.length ;  i++) {
+    console.log(fruits3[i]);
+    }
+}
+
 })();

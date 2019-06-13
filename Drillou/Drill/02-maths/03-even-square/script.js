@@ -11,6 +11,11 @@
 
 (() => {
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        let nb = 0;
+        for (let nb = 0; nb <21; nb++) {
+        if (nb%2===0){
+        console.log(nb*nb);
+        }
+        }
     });
 })();

@@ -10,5 +10,34 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const size=["18px" , "22px" , "24px" , "26px" , "28px" , "29px","40px"]
+let parentElem = document.getElementById("waave")
+parentElem.innerText = "";
+
+
+function wave (content) {
+    let j = 0;
+    let switcher = false;
+    for ( i=0 ; i< content.length ; i++) {
+        let span = document.createElement('span');
+
+        parentElem.appendChild(span);
+                
+        if (j === size.length - 1) {
+            switcher = true;
+        }else if (j === 0){
+            switcher = false;
+        }
+
+        if(switcher){
+            j--;
+        }else{
+            j++
+        }
+        span.style.fontSize = size[j];
+    }
+}
+
+wave("Je suis la petite vague des familles")
+
 })();

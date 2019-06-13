@@ -10,6 +10,18 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    // your code here
+    function day() {
+        let moistable=["coucou","Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]
+        let date = new Date();
+        let day = date.getDay();
+        let mois= date.getMonth();
+        let année= date.getFullYear();
+        let moisecrit= parseInt(mois)
+        console.log(moisecrit)
+        if (day<10 )
+        document.getElementById("targetted").innerHTML="Nous somme le "+ '0'+ day +" "+ moistable[moisecrit] + " " + année
+        else 
+        document.getElementById("targetted").innerHTML="Nous somme le "+ day +" "+ moistable[moisecrit] + " " + année
+    }
+    day()
 })();
