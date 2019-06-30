@@ -88,5 +88,11 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        for (let i=0; i < people.length ; i++){
+            const reducer = people.reduce((pi,pol) => pi + pol.age, 0)
+            console.log(reducer)
+        }
+    }
+    )
 })();

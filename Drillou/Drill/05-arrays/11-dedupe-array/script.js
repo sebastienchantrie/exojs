@@ -27,5 +27,11 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const solo = [...new Set(fruits)];
+        const fruitos= fruits.slice(0)
+        const solo2 = [...new Set(fruitos)];
+        console.log(solo)
+        console.log(solo2)
+    })
 })();

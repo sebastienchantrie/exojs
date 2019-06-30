@@ -38,5 +38,18 @@
         "arboré",
     ]);
 
-    // your code here
-})();
+    document.getElementById("run").addEventListener("click", () => {
+
+
+        let oizo = birds[Math.floor(Math.random()*birds.length)];
+        let adjectives2 = Array.from(adjectives);
+        let adjectif = adjectives2[Math.floor(Math.random() * adjectives2.length)];
+    
+            if(bird.fem==true){
+                console.log("La "+oizo.name+" "+adjectif+"e");
+            }
+            else{
+                console.log("Le "+oizo.name+" "+adjectif);
+            }
+        })
+    })();

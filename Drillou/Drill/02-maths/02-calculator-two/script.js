@@ -34,4 +34,6 @@
             document.getElementById("afficher").innerHTML = div;
             break;
         }
-})();
+};
+});
+

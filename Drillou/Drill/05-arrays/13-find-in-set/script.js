@@ -22,5 +22,9 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(people.size)
+        if (people.has("Alexandre") ==true)
+        console.log("Alexandre fait partie du tableau")
+    })
 })();
